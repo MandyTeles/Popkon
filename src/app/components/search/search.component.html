@@ -1,4 +1,6 @@
 <div>
     <input type="text" [(ngModel)]="searchTerm" (ngModelChange)="onSearchChange()" placeholder="pesquise um vídeo" name="pesquisa" >
     <button class="busca"><img src="https://i.postimg.cc/7LTq1cPz/weui-search-outlined.png" alt="botão busca"></button>
+
+    // Ao adicionar o ngFor nos vídeos, eles se repetem várias vezes, e a filtragem de conteúdo não se mostra presente na tela. Todavia, ao colocar o *ngFor="let video of filteredVideos" nos vídeos, é possível perceber no inspecionar que a filtragem está acontecendo no back. Ou seja, consegui fazer o sistema de filtragem, porém não consegui implementá-lo corretamente no front.
 </div>
