@@ -1,0 +1,79 @@
+
+    <div>
+        <app-search [searchTerm]="searchTerm" (searchChanged)="onSearch($event)"></app-search>
+    </div>
+    <div class="c-videos" *ngIf="!showVideo;else videoContent">
+    
+    
+        <span (click)="showVideoContent('LT1NHfKtiLY')" >
+                <div class="video" >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LT1NHfKtiLY?si=Al_y-m0a-pwIIM6R&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h2>Pintando sem Lineart</h2>
+                    <p>Meu processo de desenho no CLIP STUDIO</p>
+                   
+                </div>
+        </span>
+        <span (click)="showVideoContent('f4aw4F2vyvc')">
+                <div class="video" >
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/f4aw4F2vyvc?si=SICzjOslCJqWyFr_&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <h2>Parkour Aterrorizante!</h2>
+                    <p>Finding Frankie</p>
+                </div>
+        </span>
+    
+        <span (click)="showVideoContent('yUdBAdTzuX8')">
+            <div class="video" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yUdBAdTzuX8?si=O_xNg8icqzrkoBtg&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Se eu pudesse voltar no tempo, faria isso</h2>
+                <p>Erros quando comecei na carreira de TI</p>
+            </div>
+        </span>
+        <span (click)="showVideoContent('g_0ekBSzk30')">
+            <div class="video" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/g_0ekBSzk30?si=nRiZQB9u6vSKuuqY&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Samsung Galaxy S23 FE na vida real [vlog]</h2>
+                <p>Testei o Galaxy S23 FE</p>
+            </div>
+        </span>
+    
+        <span (click)="showVideoContent('ef1qQupfRVo')">
+            <div class="video" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ef1qQupfRVo?si=g3E5iEz9agGUfZXd&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>O caso Hello Kitty</h2>
+                <p>O corpo de uma mulher foi encontrado dentro de uma boneca Hello Kitty</p>
+            </div>
+        </span>
+    
+        <span (click)="showVideoContent('YdtiRw7bHwQ')">
+            <div class="video" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YdtiRw7bHwQ?si=W7wsFIRyrlwKeAoK&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Você provavelmente estuda errado</h2>
+                <p>Um erro que é bastante comum na preparação de vários concursos.</p>
+            </div>
+        </span>
+    
+        <span (click)="showVideoContent('IP-XK3BCyxw')">
+            <div class="video" >
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IP-XK3BCyxw?si=SXEMcZX_UPrTx5-n&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Linguagens de programação que serão tendências em 2025</h2>
+                <p>Linguagens que vão estar em alta para 2025!</p>
+            </div>
+        </span>
+    
+        <span (click)="showVideoContent('zYlecHBqnWg')">
+            <div class="video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zYlecHBqnWg?si=PjAZ5FrLViFZ2a9G&amp;controls=0modestbranding=1&end=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h2>Como desenhar QUALQUER POSE</h2>
+                <p>Poses com formas geométricas</p>
+            </div>
+        </span>
+    
+    
+    
+    </div>
+
+
+<ng-template #videoContent>
+    <app-exibicao [videoId]="currentVideo" (backToHome)="showVideo = false"></app-exibicao>
+</ng-template>
+<router-outlet></router-outlet>

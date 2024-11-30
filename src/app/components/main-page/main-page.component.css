@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container1{
+    background-color: #161616;
+    display: flex;
+    height: 190vh;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100px;
+}
+
+.logout{
+    border: 0;
+    padding: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 30px;
+    margin-left: 82px;
+    color: white;
+    background-color: black;
+    border-radius: 45px;
+    font-family: Roboto, sans-serif;
+    cursor: pointer;
+    margin-left: 25px;
+    position: fixed;
+    right: 10%;
+}
+
+.logoLogin{
+    width: 100px;
+    height: 140px;
+    margin-right: 20px;
+    position: fixed;
+    left: 5%;
+}
+.popkon{
+    margin: 30px;
+    position: fixed;
+    left: 10%;
+    font-size: 45px;
+    font-family: Poppins, sans-serif;
+    color: #D1D2F9;
+}
+
+.popiInicial{
+    position:fixed;
+    right: 61.8%;
+    height: 120px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #311058;
+    width: 100%;
+    color: #D1D2F9;
+}
+
+
+@media only screen and (max-width: 1125px) {
+  .container1{
+    height: 290vh;
+  }
+  
+  .popkon{
+    left: 8%;
+    font-size: 30px;
+  }
+  .popiInicial{
+    right: 58%;
+    height: 100px;
+  }
+  .logout{
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    right: 8%;
+  }
+
+  .logoLogin{
+    width: 80px;
+    height: 100px;
+    left: 1.8%;
+  }
+
+}
+@media only screen and (max-width: 770px) {
+      .container1{
+      height: 300vh;
+      }
+      .popkon{
+        left: 1%;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+      .popiInicial{
+        margin-top: 110px;
+        position: fixed;
+        right: 0px;
+        height: 90px;
+      }
+      .logout{
+        padding: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        right: 3%;
+      }
+    
+      .logoLogin{
+        width: 50px;
+        height: 70px;
+        left: 6%;
+      }
+    
+}

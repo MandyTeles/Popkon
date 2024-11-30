@@ -1,0 +1,63 @@
+
+input{
+      position: fixed;
+      left: 36%;
+      margin: 30px;
+      padding: 20px;
+      padding-left: 85px;
+      padding-right: 85px;
+      border-radius: 50px;
+      border: 0;
+}
+
+.busca{
+    position: fixed;
+    left: 40%;
+    margin-top: 40px;
+    padding: 3px;
+    border: 0;
+    border-radius: 25px;
+    background-color:#A48EE1;
+   
+}
+.busca img{
+    width: 25px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1125px) {
+
+    input{
+        left: 37%;
+        padding: 15px;
+        padding-left: 65px;
+        padding-right: 25px;
+    
+    }
+    .busca{
+        left: 43%;
+    }
+    
+    .busca img{
+        width: 20px;
+    }
+
+}
+@media only screen and (max-width: 770px) {
+    input{
+        left: 20%;
+        padding: 10px;
+        padding-left: 45px;
+        padding-right: 0;
+    }
+    .busca{
+        left: 28%;
+        margin-top:33px;
+        border-radius: 100px;
+    }
+    
+    .busca img{
+        width: 18px;
+    }
+
+}
